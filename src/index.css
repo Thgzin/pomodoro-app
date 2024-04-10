@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --primary-color: #2791e2;
+  --secondary-color: #ef5d50;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: rgb(13, 12, 34);
+  background: linear-gradient(90deg, rgba(13, 12, 34, 1) 16%, rgba(10, 12, 27, 1) 68%);
+
+  transition: background-color 300ms ease-in-out;
+  line-height: 1.5;
+}
+
+.working {
+  background: rgb(13, 12, 34);
+  background: linear-gradient(90deg, rgba(13, 12, 34, 1) 16%, rgba(28, 26, 71, 1) 68%);
+}
+
+.hidden {
+  display: none;
+}
+
+.pomodoro {
+  background-color: transparent;
+  color: #fff;
+  margin: 50px 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pomodoro .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pomodoro button {
+  background-color: rgb(85, 77, 230);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #ffffff;
+  transition: background-color 300ms ease-in-out;
+  margin: 20px auto;
+}
+
+.pomodoro button:hover {
+  opacity: 0.9;
+}
+
+.working .pomodoro button {
+  background-color: rgb(13, 12, 34);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #fff;
+  transition: background-color 300ms ease-in-out;
+  margin: 20px auto;
+}
+
+.working .pomodoro button {
+  background-color: rgba(109, 92, 238, 0.993);
+  color: #fff;
+}
+
+.pomodoro h2 {
+  font-size: 22px;
+}
+
+.pomodoro .timer {
+  font-size: 6rem;
+}
+
+.pomodoro .details {
+  margin: 20px 0;
+}
